@@ -18,11 +18,11 @@ const Nav = () => {
   const [show, setShow] = useState(false);
   const classes = useStyles();
   const handleOver = () => {
-    setShow(!show);
+    setShow(true);
   };
 
   const handleOut = () => {
-    setShow(!show);
+    setShow(false);
   };
   return (
     <div>
@@ -35,11 +35,7 @@ const Nav = () => {
           </div>
           <div className="header__navigation__menu">
             <ul className="header__navigation__items">
-              <li
-                className="header__navigation__item"
-                onMouseOver={handleOver}
-                onMouseOut={handleOut}
-              >
+              <li className="header__navigation__item" onMouseOver={handleOver}>
                 <a
                   href="/"
                   className="header__gnb__dropmenu header__nav__hover"
@@ -47,32 +43,32 @@ const Nav = () => {
                   <h4>탐색</h4>
                 </a>
               </li>
-              <li className="header__navigation__item">
+              <li className="header__navigation__item" onMouseOut={handleOut}>
                 <a href="/" className="header__nav__hover">
                   <h4>커리어 성장</h4>
                 </a>
               </li>
-              <li className="header__navigation__item">
+              <li className="header__navigation__item" onMouseOut={handleOut}>
                 <a href="/" className="header__nav__hover">
                   <h4>직군별 연봉</h4>
                 </a>
               </li>
-              <li className="header__navigation__item">
+              <li className="header__navigation__item" onMouseOut={handleOut}>
                 <a href="/" className="header__nav__hover">
                   <h4>이력서</h4>
                 </a>
               </li>
-              <li className="header__navigation__item">
+              <li className="header__navigation__item" onMouseOut={handleOut}>
                 <a href="/" className="header__nav__hover">
                   <h4>매치업</h4>
                 </a>
               </li>
-              <li className="header__navigation__item">
+              <li className="header__navigation__item" onMouseOut={handleOut}>
                 <a href="/" className="header__nav__hover">
                   <h4>프리랜서</h4>
                 </a>
               </li>
-              <li className="header__navigation__item">
+              <li className="header__navigation__item" onMouseOut={handleOut}>
                 <a href="/" className="header__nav__hover">
                   <h4>AI 합격예측</h4>
                   <h2>Beta</h2>
