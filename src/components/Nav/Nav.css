@@ -1,0 +1,283 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+html {
+  font-size: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  z-index: 1;
+}
+
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+img {
+  width: 3.7rem;
+  height: 1rem;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  border-bottom: 0.5px solid #dcdcdc;
+  z-index: 100;
+}
+.header {
+  display: flex;
+  font-size: 0.7rem;
+  width: 53rem;
+  height: 2.5rem;
+  font-weight: 600;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.header__navigation__items {
+  display: flex;
+  position: relative;
+}
+
+.header__navigation__item {
+  padding: 0.5rem;
+}
+
+.header__nav__hover h4 {
+  position: relative;
+}
+
+.header__nav__hover {
+  position: relative;
+}
+
+.header__nav__hover h2 {
+  position: absolute;
+  font-size: 0.5rem;
+  color: #5b84ff;
+  top: 10px;
+  left: 73px;
+}
+
+.header__nav__hover h4::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  transform: translateX(-100%);
+  width: 0%;
+  height: 2px;
+  background: #f1c40f;
+  transition: all 0.5s ease-in-out;
+}
+
+.header__nav__hover h4:hover::after {
+  width: 100%;
+}
+
+.header__aside__items {
+  display: flex;
+  position: relative;
+}
+
+.header__aside__items li {
+  padding: 0.5rem;
+}
+
+.header__aside__items li:nth-child(2) {
+  display: flex;
+  margin-right: -1rem;
+}
+
+.header__aside__search-svg {
+  position: absolute;
+  color: #696969;
+  top: 15px;
+  font-size: 1.3rem;
+}
+
+.header__aside__svg {
+  color: #696969;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 1.5rem;
+  height: 1.2rem;
+}
+
+.header__signup__item {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.header__signup__item span {
+  position: absolute;
+  border-radius: 5px;
+  top: -5px;
+  left: 20px;
+  text-align: center;
+  padding: 2px;
+  font-size: 0.4rem;
+  width: 8px;
+  height: 8px;
+  background-color: rgb(51, 102, 255);
+  color: white;
+}
+
+.header__signin__item {
+  position: relative;
+  margin: 0 1rem;
+}
+
+.header__signup__item Avatar {
+  position: absolute;
+}
+.header__signin__item span {
+  position: absolute;
+  border-radius: 5px;
+  top: -3.5px;
+  left: 17px;
+  text-align: center;
+  padding: 2px;
+  font-size: 0.4rem;
+  width: 8px;
+  height: 8px;
+  background-color: rgb(51, 102, 255);
+  color: white;
+}
+
+.header__aside__items li {
+  display: flex;
+}
+
+.header__aside__items li:nth-child(2) {
+  margin-top: 0.3rem;
+}
+
+.header__aside__items li:nth-child(3)::before {
+  display: block;
+  margin: 0 1.5rem 0 2px;
+  margin-top: 11px;
+  content: "";
+  width: 1px;
+  height: 10px;
+  background-color: #e1e2e3;
+}
+
+a.dashboardButton {
+  display: flex;
+  border: 1px solid #e1e2e3;
+  border-radius: 15px;
+  padding: 0.3rem 1rem;
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  z-index: 100;
+}
+.gnb-container {
+  display: flex;
+  height: 0vh;
+  width: 100%;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+
+.gnb-wrap {
+  width: 53rem;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+.gnb__menu__items {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  height: auto;
+}
+
+.grid-item {
+  padding: 2rem 1rem 0 0;
+}
+
+.grid-item a h2 {
+  font-size: 0.8rem;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.grid-item a h3 {
+  color: #696969;
+  opacity: 0.6;
+  font-size: 0.7rem;
+  width: 100%;
+  padding: 3px 0;
+  margin-bottom: 5px;
+}
+
+.grid-item a:nth-child(1) {
+  padding-right: 20px;
+  padding-bottom: 15px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.gnb__menu__more {
+  position: absolute;
+  color: #696969;
+  font-size: 17px;
+  right: -0.5rem;
+  top: 2px;
+}
+
+.grid-item a:nth-last-child(1) {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item-bigcate {
+  padding: 2rem 1rem 0 0;
+}
+
+.grid-item-bigcate a {
+  display: flex;
+  position: relative;
+  padding-right: 1rem;
+  padding-bottom: 0.75rem;
+}
+
+.gnb__menu__more__big {
+  position: absolute;
+  color: #696969;
+  font-size: 17px;
+  right: -0.8rem;
+  top: 2px;
+}
+
+.grid-item-bigcate a h2 {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 750px) {
+  .gnb-container {
+    visibility: hidden;
+  }
+}
