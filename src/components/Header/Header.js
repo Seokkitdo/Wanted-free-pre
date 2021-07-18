@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../images/logo.png";
 import { AiOutlineSearch } from "react-icons/ai";
 import { AiOutlineBell } from "react-icons/ai";
+import { GiHamburgerMenu } from "react-icons/gi";
 import Avatar from "@material-ui/core/Avatar";
 import { makeStyles } from "@material-ui/core/styles";
 import DropMenu from "../DropMenu/DropMenu";
@@ -34,6 +35,11 @@ const Header = ({ show, setShow }) => {
           </div>
           <div className="header__navigation__menu">
             <ul className="header__navigation__items">
+              <li className="header__navigation__item" onMouseOver={handleOver}>
+                <a href="/">
+                  <h4>홈</h4>
+                </a>
+              </li>
               <li className="header__navigation__item" onMouseOver={handleOver}>
                 <a
                   href="/"
@@ -78,14 +84,23 @@ const Header = ({ show, setShow }) => {
           <div className="header__search-sign__items">
             <ul className="header__aside__items">
               <li>
-                <AiOutlineSearch className="header__aside__search-svg" />
+                <button>
+                  <AiOutlineSearch className="header__aside__search-svg" />
+                </button>
               </li>
               <li>
-                <a href="/" className="header__signup__item">
+                <a href="/" className="header__aside__bell">
                   <AiOutlineBell className="header__aside__svg" />
                   <span>N</span>
                 </a>
-                <a href="/" className="header__signin__item">
+              </li>
+              <li className="submenu">
+                <a href="/">
+                  <GiHamburgerMenu className="header__aside__svg" />
+                </a>
+              </li>
+              <li>
+                <a href="/" className="header__aside__myinfo">
                   <Avatar className={classes.small}>JD</Avatar>
                   <span>N</span>
                 </a>

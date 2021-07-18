@@ -33,6 +33,10 @@ header {
   position: relative;
 }
 
+.header__navigation__items li:nth-child(1) {
+  display: none;
+}
+
 .header__nav__hover {
   position: relative;
 }
@@ -91,16 +95,16 @@ header {
   height: 1.2rem;
 }
 
-.header__signup__item {
+.header__aside__myinfo {
   position: relative;
-  margin-left: 1rem;
+  margin-top: 0.2rem;
 }
 
-.header__signup__item span {
+.header__aside__myinfo span {
   position: absolute;
   border-radius: 5px;
-  top: -5px;
-  left: 20px;
+  top: -1.5px;
+  left: 15px;
   text-align: center;
   padding: 2px;
   font-size: 0.4rem;
@@ -110,15 +114,12 @@ header {
   color: white;
 }
 
-.header__signin__item {
+.header__aside__bell {
   position: relative;
   margin: 0 1rem;
 }
 
-.header__signup__item Avatar {
-  position: absolute;
-}
-.header__signin__item span {
+.header__aside__bell span {
   position: absolute;
   border-radius: 5px;
   top: -3.5px;
@@ -140,9 +141,14 @@ header {
   margin-top: 0.3rem;
 }
 
-.header__aside__items li:nth-child(3)::before {
+.header__aside__items li:nth-child(3) {
+  margin-top: 0.25rem;
+  display: none;
+}
+
+.header__aside__items li:nth-child(5)::before {
   display: block;
-  margin: 0 1.5rem 0 2px;
+  margin: 0 1.5rem 0 0.25rem;
   margin-top: 11px;
   content: "";
   width: 1px;
@@ -150,10 +156,35 @@ header {
   background-color: #e1e2e3;
 }
 
+button {
+  outline: none;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+}
 a.dashboardButton {
   display: flex;
   border: 1px solid #e1e2e3;
   border-radius: 15px;
   padding: 0.3rem 1rem;
   font-weight: 400;
+}
+
+@media (max-width: 749px) {
+  .header__logo__logo-img {
+    display: none;
+  }
+  .header__navigation__items li:nth-child(1) {
+    display: block;
+  }
+  .header__navigation__items li:nth-child(n + 4):nth-child(-n + 8) {
+    display: none;
+  }
+  .header__aside__items li:nth-child(4),
+  .header__aside__items li:nth-child(5) {
+    display: none;
+  }
+  .header__aside__items li:nth-child(3) {
+    display: block;
+  }
 }

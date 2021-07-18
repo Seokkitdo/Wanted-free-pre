@@ -1,9 +1,14 @@
+a h3,
+h2 {
+  overflow: hidden;
+  text-overflow: ellipse;
+  white-space: nowrap;
+}
+
 .gnb-container {
   display: flex;
-  height: 0vh;
-  width: 100%;
+  width: 100vw;
   font-weight: 400;
-  transition: all 0.3s;
 }
 
 .gnb-wrap {
