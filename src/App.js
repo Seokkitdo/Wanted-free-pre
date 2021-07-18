@@ -1,10 +1,11 @@
+import React, { useState } from "react";
 import "./App.css";
-import Nav from "./components/Nav/Nav";
+import Header from "./components/Header/Header";
 function App() {
+  const [show, setShow] = useState(false);
   return (
     <div>
-      <Nav />
-      
+      <Header show={show} setShow={setShow} />
     </div>
   );
 }

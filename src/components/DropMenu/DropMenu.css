@@ -183,10 +183,6 @@ a.dashboardButton {
   font-weight: 400;
 }
 
-.container {
-  display: flex;
-  z-index: 100;
-}
 .gnb-container {
   display: flex;
   height: 0vh;
