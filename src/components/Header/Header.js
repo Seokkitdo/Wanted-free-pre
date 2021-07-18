@@ -5,6 +5,7 @@ import { AiOutlineBell } from "react-icons/ai";
 import Avatar from "@material-ui/core/Avatar";
 import { makeStyles } from "@material-ui/core/styles";
 import DropMenu from "../DropMenu/DropMenu";
+import "./Header.css";
 
 const useStyles = makeStyles((theme) => ({
   small: {
